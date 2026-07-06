@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Registro de fontes do NintendoFeed.
+
+  COMO USAR:
+  1. Hospede este arquivo em algum lugar acessível publicamente com CORS liberado.
+     A opção mais simples e gratuita: crie um repositório público no GitHub, suba
+     este arquivo, e use a URL "raw" dele, algo como:
+     https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPO/main/sources-config.xml
+
+  2. Copie essa URL "raw" e cole na variável SOURCES_URL no topo do <script>
+     do widget (arquivo gadget-content.html).
+
+  3. Pronto: a partir de agora, para adicionar, remover ou trocar uma fonte de
+     notícia, basta editar este arquivo XML (direto no GitHub, sem precisar
+     tocar no widget ou no template do Blogger).
+
+  Atributos:
+  - id: identificador único e curto (sem espaços), usado internamente.
+  - dedicated: "true" = site 100% Nintendo, todo item entra sem filtro.
+               "false" = site geral, só entram itens que mencionem
+               Nintendo/Switch/Mario/Zelda/etc no título ou resumo.
+-->
+<nintendoFeedSources>
+  <source id="nlife" dedicated="true">
+    <name>Nintendo Life</name>
+    <url>https://www.nintendolife.com/feeds/news</url>
+  </source>
+  <source id="nevery" dedicated="true">
+    <name>Nintendo Everything</name>
+    <url>https://nintendoeverything.com/feed/</url>
+  </source>
+  <source id="nblast" dedicated="true">
+    <name>NintendoBlast</name>
+    <url>https://nintendoblast.com.br/feed/</url>
+  </source>
+  <source id="mnn" dedicated="true">
+    <name>My Nintendo News</name>
+    <url>https://mynintendonews.com/feed/</url>
+  </source>
+  <source id="perfn" dedicated="true">
+    <name>Perfectly Nintendo</name>
+    <url>https://perfectly-nintendo.com/feed/</url>
+  </source>
+  <source id="ign" dedicated="false">
+    <name>IGN</name>
+    <url>https://www.ign.com/rss/articles/feed</url>
+  </source>
+  <source id="poly" dedicated="false">
+    <name>Polygon</name>
+    <url>https://www.polygon.com/rss/index.xml</url>
+  </source>
+  <source id="euro" dedicated="false">
+    <name>Eurogamer</name>
+    <url>https://www.eurogamer.net/feed</url>
+  </source>
+  <source id="gspot" dedicated="false">
+    <name>GameSpot</name>
+    <url>https://www.gamespot.com/feeds/mashup/</url>
+  </source>
+</nintendoFeedSources>
